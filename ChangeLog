@@ -1,0 +1,29 @@
+2018-07-09  Danilo Chang <ray2501@gmail.com>
+
+	* Tcl-lzf:            v0.5
+	* Remove _ANSI_ARGS_
+
+2018-06-23  Danilo Chang <ray2501@gmail.com>
+
+	* Tcl-lzf:            v0.4
+	* Add command to compress/decompress byte array.
+
+2016-12-15  Danilo Chang <ray2501@gmail.com>
+
+	* Tcl-lzf:            v0.3
+	* Update TEA files
+
+2016-02-26  Danilo Chang <ray2501@gmail.com>
+
+	* Tcl-lzf:            v0.2
+	* Add more option check
+
+2014-12-02  Danilo Chang <ray2501@gmail.com>
+
+	* Tcl-lzf:            v0.1 
+	* liblzf version:     Add liblzf v3.6 source code 
+
+2014-12-01  Danilo Chang <ray2501@gmail.com>
+
+	* Tcl-lzf:            Dump files from Sample extension 
+

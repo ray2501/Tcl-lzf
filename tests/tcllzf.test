@@ -1,0 +1,35 @@
+
+if {[lsearch [namespace children] ::tcltest] == -1} {
+    package require tcltest
+    namespace import ::tcltest::*
+}
+
+package require tcllzf
+
+test tcllzf_1_1 {
+    Test: tcllzf
+} -body {
+    set test0 "##### Hello liblzf #####, @@@@@ I am tickle @@@@@"
+    set test1 [lzf::compress $test0]
+    set test2 [lzf::decompress $test1 128]
+
+    if {[string equal $test0 $test2]==1} {
+        set result 1
+    }
+} -result {1}
+
+test tcllzf_1_2 {
+    Test: tcllzf
+} -body {
+    set test0 "##### Hello liblzf #####, @@@@@ I am tickle @@@@@"
+    set test1 [lzf::compressByte $test0]
+    set test2 [lzf::decompressByte $test1 128]
+
+    if {[string equal $test0 $test2]==1} {
+        set result 1
+    }
+} -result {1}
+
+# cleanup
+::tcltest::cleanupTests
+return
