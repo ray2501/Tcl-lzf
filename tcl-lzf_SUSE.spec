@@ -6,7 +6,7 @@ Name:          tcl-lzf
 Summary:       Tcl interface for liblzf
 Version:       0.5
 Release:       1
-License:       BSD
+License:       BSD-2-Clause
 Group:         Development/Libraries/Tcl
 Source:        Tcl-lzf-%version.tar.gz
 URL:           https://sites.google.com/site/ray2501/tcl-lzf 
