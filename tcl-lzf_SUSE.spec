@@ -9,7 +9,7 @@ Release:       1
 License:       BSD-2-Clause
 Group:         Development/Libraries/Tcl
 Source:        Tcl-lzf-%version.tar.gz
-URL:           https://sites.google.com/site/ray2501/tcl-lzf 
+URL:           https://github.com/ray2501/tcl-lzf
 BuildRequires: autoconf
 BuildRequires: make
 BuildRequires: tcl-devel >= 8.4
