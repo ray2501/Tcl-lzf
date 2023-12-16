@@ -4,7 +4,7 @@
 
 Name:          tcl-lzf
 Summary:       Tcl interface for liblzf
-Version:       0.5
+Version:       0.6
 Release:       1
 License:       BSD-2-Clause
 Group:         Development/Libraries/Tcl
