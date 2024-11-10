@@ -28,10 +28,10 @@ extern "C" {
 
 EXTERN int	Tcllzf_Init(Tcl_Interp * interp);
 
-int COMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[]);
-int DECOMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[]);
-int COMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[]);
-int DECOMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[]);
+int COMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[]);
+int DECOMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[]);
+int COMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[]);
+int DECOMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[]);
 
 
 /*

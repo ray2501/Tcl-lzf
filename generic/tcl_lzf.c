@@ -20,10 +20,11 @@
 TCL_DECLARE_MUTEX(tcllzf_mutex);
 
 
-int COMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[])
+int COMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[])
 {
     char *inbuffer = NULL, *outbuffer = NULL;
-    int inlen = 0, outlen = 0;
+    Tcl_Size inlen = 0;
+    int outlen = 0;
     Tcl_Obj *outstr;
 
     if(objc != 2)
@@ -69,10 +70,11 @@ int COMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONS
 }
 
 
-int DECOMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[])
+int DECOMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[])
 {
     char *inbuffer = NULL, *outbuffer = NULL;
-    int inlen = 0, outlen = 0;
+    Tcl_Size inlen = 0;
+    int outlen = 0;
     Tcl_Obj *outstr; 
 
     if(objc != 3)
@@ -113,10 +115,11 @@ int DECOMPRESS (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CO
     return TCL_OK;
 }
 
-int COMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[])
+int COMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[])
 {
     unsigned char *inbuffer = NULL, *outbuffer = NULL;
-    int inlen = 0, outlen = 0;
+    Tcl_Size inlen = 0;
+    int outlen = 0;
     Tcl_Obj *outstr; 
 
     if(objc != 2)
@@ -162,10 +165,11 @@ int COMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CON
 }
 
 
-int DECOMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST obj[])
+int DECOMPRESSB (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const obj[])
 {
     unsigned char *inbuffer = NULL, *outbuffer = NULL;
-    int inlen = 0, outlen = 0;
+    Tcl_Size inlen = 0;
+    int outlen = 0;
     Tcl_Obj *outstr;
 
     if(objc != 3)
